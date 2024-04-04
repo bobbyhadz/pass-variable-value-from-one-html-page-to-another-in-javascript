@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Page - bobbyhadz.com</title>
+
+    <script>
+      window.addEventListener('load', () => {
+        const website = localStorage.getItem('website');
+        console.log(website);
+
+        const tasks = JSON.parse(localStorage.getItem('tasks'));
+        console.log(tasks);
+      });
+    </script>
+  </head>
+  <body>
+    <h2>About page: bobbyhadz.com</h2>
+  </body>
+</html>

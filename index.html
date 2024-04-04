@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      window.addEventListener('load', () => {
+        // 👇️ for primitive variables
+        const website = 'bobbyhadz.com';
+        localStorage.setItem('website', website);
+
+        // 👇️ for arrays, objects, etc
+        const tasks = ['develop', 'test', 'ship'];
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+      });
+    </script>
+  </head>
+
+  <body>
+    <h2>bobbyhadz.com | Home</h2>
+
+    <a href="/about">About page</a>
+  </body>
+</html>
